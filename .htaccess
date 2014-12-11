@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !(\.php$)
+#RewriteRule ^([^/.]+)/*(.*)? /FrameworkZ/index.php?__page=$1&__param=$2 [QSA]
+
+# HTTP error handling
+ErrorDocument 404 /FrameworkZ/error?e=404
+
