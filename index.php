@@ -5,7 +5,7 @@
  */
 $_REQUEST['_DEBUG'] = false;
 $_REQUEST['_BASE_DIRECTORY_'] = dirname(__FILE__);
-$_REQUEST['_HOME_DIRECTORY_'] = '/FrameworkZ';
+$_REQUEST['_HOME_DIRECTORY_'] = '/fz-beta';
 	
 if(!isset($_REQUEST['__page']) || $_REQUEST['__page'] == '') {
 	header("Location: ".$_REQUEST['_HOME_DIRECTORY_']."/index.php?__page=home"); 
